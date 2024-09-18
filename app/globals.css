@@ -4,8 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+ 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,8 +12,16 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+   
   }
 }
+.dark{
+ color:#fff ;
+ background-color:#021526 ;
+}
+.light{
+  background-color:#fff ;
+ }
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,6 +31,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    
+    
 }
 
 @layer utilities {
@@ -31,3 +40,4 @@ body {
     text-wrap: balance;
   }
 }
+
